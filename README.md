@@ -1,50 +1,100 @@
-# React + TypeScript + Vite
+# NextStep
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NextStep is a modern web application designed to help users plan their free time, set and achieve personal goals, and develop habits with discipline and consistency.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Features
+- **User Authentication**
+  - Register and log in with email and password.
+  - Secure sessions using JWT.
+  - Password recovery functionality.
 
-## Expanding the ESLint configuration
+- **Dashboard**
+  - View tasks, goals, and habits in a centralized location.
+  - Interactive widgets for quick insights.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Task Management**
+  - Add, update, and delete tasks.
+  - Set priorities and due dates for tasks.
+  - Mark tasks as completed.
 
-- Configure the top-level `parserOptions` property like this:
+- **Goal Setting**
+  - Create short-term and long-term goals.
+  - Track progress with visual indicators.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Habit Tracking**
+  - Build and track daily habits.
+  - Visualize performance history through graphs.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Advanced Features
+- **Notifications**
+  - Reminders for tasks, goals, and habits.
+  - Push notifications for updates and deadlines.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Analytics**
+  - View performance insights on tasks, goals, and habits.
+  - Identify trends and patterns in productivity.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Collaboration**
+  - Work on shared goals with other users.
+
+- **Integrations**
+  - Sync with external calendars (Google, Apple, etc.).
+
+- **Themes**
+  - Light and dark mode for user convenience.
+
+## Technology Stack
+
+### Frontend
+- **Vite** for a fast development environment.
+- **React** with **TypeScript** for a robust, type-safe UI.
+- **Emotion Styled** for styling.
+- **Redux** to manage the state.
+- **Framer Motion** for animations.
+- **Axios** for API requests.
+
+### Backend
+- **NestJS** for scalable and modular server-side development.
+- **MongoDB** for database management.
+- **TypeScript** for consistent type-safe development.
+- **JWT** for secure authentication.
+- **SendGrid** for email notifications.
+- **Cloudinary** for file management.
+- **Firebase Cloud Messaging** for push notifications.
+
+## Getting Started
+
+### Prerequisites
+- Node.js (>=14.x)
+- MongoDB instance (local or cloud-hosted)
+- Environment variables for API keys and database connections.
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/bohdan-strilets/next-step.git
+   cd next-step
+   ```
+
+### Running the Application
+1. Start the frontend server:
+   ```bash
+   npm run dev
+   ```
+
+
+## Contribution
+We welcome contributions! To contribute:
+1. Fork the repository.
+2. Create a new branch (`feature/your-feature-name`).
+3. Commit your changes and push to the branch.
+4. Open a pull request.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+**NextStep** — Take the next step in achieving your goals!

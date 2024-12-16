@@ -8,7 +8,7 @@ import globalStyles from './styles/globalStyles.ts'
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
-		<BrowserRouter>
+		<BrowserRouter basename="next-step">
 			<Global styles={globalStyles} />
 			<App />
 		</BrowserRouter>

@@ -3,6 +3,8 @@ import { IoRainyOutline } from 'react-icons/io5'
 
 import { fadeInUp } from '@/utils/animations/fadeInUp'
 
+import Logo from '../UI/Logo'
+
 import {
 	DateTime,
 	IconWrapper,
@@ -16,6 +18,7 @@ import {
 const Weather: FC = () => {
 	return (
 		<Wrapper>
+			<Logo />
 			<WeatherForecast>
 				<Temperature {...fadeInUp()}>08°</Temperature>
 				<LocationWrapper {...fadeInUp(0.3)}>

@@ -1,7 +1,9 @@
 import { FC } from 'react'
 
+import Weather from '@/components/Weather'
+
 const HomePage: FC = () => {
-	return <h1>HomePage</h1>
+	return <Weather />
 }
 
 export default HomePage
